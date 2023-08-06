@@ -1,621 +1,867 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blinkit-Clone-July</title>
-    <!-- bootstrap + font awesome + vanilla css + HTML -->
+    <!-- web logo -->
+    <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAB3CAMAAAAO5y+4AAAAqFBMVEX4y0b///8cHBwMgx8AABj8zkf+0Ef/1EgVFxsAfhxGOiESFRsKEBu/nTr4ykJuXClKPSH4yThllSnOqT0rJR22sTlYSSRDiyTWrz6qizRTRSSDbCz//PX97cr75Kv624r502v857T74J35z1jux0T+9+gnhiDft0CqqzbGtzwACBr4xyxPjiY2Lx/50WO2lTbavkCfgjKTezCFnS56ZSthUSc9Mx6apjNB8vcPAAAEQklEQVRoge2baXeiMBSGUwwBBbGudUGplZYRl1Grzv//Z3OzKWp0pFPJ6Tl5vyRke7hZ4Zwb9HShcDiKXifoezR5jUbD8BKCzqHjZb1eD4JvwiIUBNDecnyOPuW+R0H9+5AZeD2I3q9yw7eg/gAoVz14C9Xc4eRxVEaeDFXc0ewRPZxVMBtdcqPZg6lUs+icWwg2A0aFYo9gJMa2ICyAR0fusDgsgIeSG04ePZOzCiah4L49dt2eq/7Gue9FWksVvDNuVKy5YHBEuWHR5oLBIXDHRZsLBo+Bu9Rg7/IJhcWbCwaHaKiFO0QjLdwRioofXhjgCL1q4b6i7/pgzSc9VCMjIyMjIyMjo0fKJlT2WSoRqTxU11Tl2UynMXXlao+qe1biN0tNiAiV9UXeSdr0F9UKYm0Wu8p1dphqffredh/SUlx19ixsKrmLyzy7UaZqQ9oHjZTiq9yab1nWBbfj0dSq8+zSUM2tXObZjRKIcV9o7OOncWk/4zQH99DPObjH+Se5pFmlytY+FlJw0WpKRcvfzSUo6SawrE64cj3JVUFQDIX4sstyZf4hlNxrS0lynXjQon3aqToZrlPrgypdtKPhc0w2rFAtISdcO+6z/Br6fJnP5y/T1XxeYoKnhpIsuL0qTmkzloc78IoHbsX3PBfabnkg3LUwK+RDT2S5pJPSfD8hjTKbV9Ny6aCPG1y3jy0pf2FfzucW57myEG6SI5cMsEiT8/lerkWbcEWreEuucEVBGsDLSa7T49jfBOXmQjX3uYJTHu2SK1xs9VtYGCy5TpO1gDcEqbnK7V1y8RqmfLJljfpbR83FGyi0SXl5m3O78YKWTWtsJQouimM+n1dxrF5Kgot7bBqTAW3U3SMlF97nUMMfEMHtsMc9X0459yu35bAnO+bGJ0ouZqcWqeIM1+vw+vGXuOmAcxGpMWB3p+Sy89DuZrl8oqU98d5f3Z/JgD027+fy6d1CX+Kmm1NuDnu5Ujb0+cd3L/pZAtTjq+S6ntxI8nMpgj2tMdsU4vu57n7H3ty1v8KlZ4/joDVfvzX1vqHk+glfA2xqnnPLbWLfXL9Qr7LdLcR+1byfC7sjWcvtOcttiAPpZX5zv4Ke8sW27+9s9f6s5NI1/eyx0cnaa38etkqlwWJeCUupPC/Ow6XnUZMbvCEZe2PJZU9XuLi3wZ7o7xYc6keud4Mr8mD1bVPR00eu3Rbg8qeai33fh++N6oJ9SPsDRCt1WCpwUxo2UYuFkkvjwOV57HvD8ml8H4tzn5Wbltgn9J9rU5qLOAn8AMBperuYWmdfUbZIXLXb0xv/KrK04j/pP/VvqJGRkZGRkZGR0Y+ULv8NXf4quvxzdPkj6fK/0uJvNgu1+ddp8yfU5T+py19Um3+sLn9gbf7Puvy9tfm3a/Pn13Z/Qdt9DW33U7Tdx9F2/+hJ130rZvN4OSv+fhlHF3Gf7i+itHbYQb4K1QAAAABJRU5ErkJggg==" type="image/x-icon">
     <!-- link css file -->
-    <link rel="stylesheet" href="style.css" />
-    <!-- add bootstrap css cdn -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap css cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <!-- font awesome cdn -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <!-- basic blueprint -->
-    <nav
-      class="blink-it-navbar px-3 d-flex align-items-center justify-content-between"
-    >
-      <div class="logo">
-        <a href="/"
-          ><svg
-            width="134"
-            height="30"
-            viewBox="0 0 114 30"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M14.3342 7.186C16.2619 7.186 17.9832 7.66644 19.4978 8.62732C21.0262 9.57447 22.2242 10.9197 23.0917 12.663C23.9316 14.3377 24.3516 16.3075 24.3516 18.5724C24.3516 20.7687 23.9316 22.7316 23.0917 24.4612C22.2517 26.1908 21.0675 27.5429 19.5391 28.5175C17.9969 29.5058 16.2619 30 14.3342 30C12.9297 30 11.6078 29.7117 10.3685 29.1352C9.12927 28.5587 8.06901 27.7488 7.18775 26.7056V29.4852H0V0H7.18775V10.4598C8.06901 9.41661 9.12927 8.61359 10.3685 8.05079C11.6078 7.47426 12.9297 7.186 14.3342 7.186ZM12.1861 24.0494C13.2051 24.0494 14.1139 23.8161 14.9125 23.3493C15.7112 22.8826 16.3377 22.2306 16.7921 21.3933C17.2465 20.5697 17.4737 19.6294 17.4737 18.5724C17.4737 17.5429 17.2465 16.6095 16.7921 15.7721C16.3377 14.9348 15.7112 14.2828 14.9125 13.8161C14.1139 13.3493 13.2051 13.116 12.1861 13.116C11.2223 13.116 10.3617 13.3493 9.60432 13.8161C8.84699 14.269 8.2549 14.9073 7.82804 15.731C7.40118 16.5683 7.18775 17.5154 7.18775 18.5724C7.18775 19.6294 7.40118 20.5765 7.82804 21.4139C8.2549 22.2375 8.84699 22.8826 9.60432 23.3493C10.3617 23.8161 11.2223 24.0494 12.1861 24.0494Z"
-              fill="#F8CB46"
-            ></path>
-            <path
-              d="M25.3356 29.4852V0H32.5233V29.4852H25.3356Z"
-              fill="#F8CB46"
-            ></path>
-            <path
-              d="M34.5607 29.4852V7.68016H41.7071V29.4852H34.5607Z"
-              fill="#F8CB46"
-            ></path>
-            <path
-              d="M57.2319 7.186C58.7603 7.186 60.1372 7.5429 61.3627 8.25669C62.5882 8.95676 63.5521 9.94509 64.2544 11.2217C64.9291 12.512 65.2664 13.9739 65.2664 15.6074V29.4852H58.4092V17.2135C58.4092 16.4173 58.2508 15.7104 57.9341 15.0927C57.6312 14.4612 57.1974 13.9739 56.6329 13.6307C56.0821 13.2876 55.4349 13.116 54.6914 13.116C53.9891 13.116 53.3419 13.2876 52.7498 13.6307C52.1577 13.9602 51.6965 14.4132 51.366 14.9897C51.0218 15.5388 50.8496 16.1839 50.8496 16.9252L50.8083 29.4852H43.6619V7.68016H50.8083V10.1716C51.483 9.23816 52.3849 8.51064 53.5141 7.98902C54.6432 7.45367 55.8824 7.186 57.2319 7.186Z"
-              fill="#F8CB46"
-            ></path>
-            <path
-              d="M81.0597 17.2135L89.1769 29.4852H81.0597L76.3091 21.7639L74.1198 24.2965V29.4852H66.932V0H74.1198V16.2869L81.0184 7.68016H89.1356L81.0597 17.2135Z"
-              fill="#F8CB46"
-            ></path>
-            <path
-              d="M34.5569 0.00232667H41.7267V5.59207H34.5569V0.00232667Z"
-              fill="#F8CB46"
-            ></path>
-            <path
-              d="M90.3176 29.4198V7.61479H97.464V29.4198H90.3176Z"
-              fill="#54B226"
-            ></path>
-            <path
-              d="M112.575 23.2634L114 27.855C113.353 28.4727 112.534 28.9737 111.542 29.3581C110.564 29.7424 109.607 29.9346 108.671 29.9346C107.322 29.9346 106.117 29.6395 105.057 29.0492C103.996 28.4452 103.17 27.6079 102.578 26.5372C101.986 25.494 101.69 24.2929 101.69 22.9339V13.3183H98.819V7.61479H101.69V0.00241089H108.547V7.61479H113.071V13.3183H108.547V21.6161C108.547 22.3162 108.733 22.8859 109.105 23.3251C109.477 23.7644 109.952 23.984 110.53 23.984C110.943 23.984 111.329 23.9223 111.687 23.7987C112.045 23.6752 112.341 23.4967 112.575 23.2634Z"
-              fill="#54B226"
-            ></path>
-            <path
-              d="M90.2609 0.00241089H97.4307V5.59215H90.2609V0.00241089Z"
-              fill="#54B226"
-            ></path></svg></a>
-      </div>
-      <div class="vertical-line"></div>
-      <div class="location">
-        <h5 class="fw-bolder">Delivery in 18 minutes</h5>
-        <p>Mumbai,India <i class="fa-solid fa-sort-down"></i></p>
-      </div>
-      <div class="search-bar">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <input placeholder="Search 'Egg'" />
-      </div>
-      <button class="btn fs-5">Login</button>
-      <button class="btn btn-success btn-lg">
-        <i class="fa-solid fa-cart-shopping"></i> My cart
-      </button>
-    </nav>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-    <div class="my-hero-section d-flex justify-content-center">
-      <img
-        src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=2700/layout-engine/2022-05/Group-33704.jpg"
-        alt="paan corner banner"
-        width="1280"
-        height="234.8623853211009"
-        loading="eager"
-        style="border-radius: 0px; object-fit: fill; cursor: default"
-      />
-    </div>
-    <div class="my-scrollable-div">
-      <div class="list">
-        <div>
-          <img
-            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=720/layout-engine/2023-07/Magazines-WEB.jpg"
-            alt="masthead_web_magazines"
-            width="335.40000000000003"
-            height="195"
-            loading="lazy"
-            style="border-radius: 16px; object-fit: fill; cursor: default"
-          />
-        </div>
-        <div>
-          <img
-            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=720/layout-engine/2023-07/Magazines-WEB.jpg"
-            alt="masthead_web_magazines"
-            width="335.40000000000003"
-            height="195"
-            loading="lazy"
-            style="border-radius: 16px; object-fit: fill; cursor: default"
-          />
-        </div>
-        <div>
-          <img
-            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=720/layout-engine/2023-07/Magazines-WEB.jpg"
-            alt="masthead_web_magazines"
-            width="335.40000000000003"
-            height="195"
-            loading="lazy"
-            style="border-radius: 16px; object-fit: fill; cursor: default"
-          />
-        </div>
-        <div>
-          <img
-            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=720/layout-engine/2023-07/Magazines-WEB.jpg"
-            alt="masthead_web_magazines"
-            width="335.40000000000003"
-            height="195"
-            loading="lazy"
-            style="border-radius: 16px; object-fit: fill; cursor: default"
-          />
-        </div>
-        <div>
-          <img
-            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=720/layout-engine/2023-07/Magazines-WEB.jpg"
-            alt="masthead_web_magazines"
-            width="335.40000000000003"
-            height="195"
-            loading="lazy"
-            style="border-radius: 16px; object-fit: fill; cursor: default"
-          />
-        </div>
-        <div>
-          <img
-            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=720/layout-engine/2023-07/Magazines-WEB.jpg"
-            alt="masthead_web_magazines"
-            width="335.40000000000003"
-            height="195"
-            loading="lazy"
-            style="border-radius: 16px; object-fit: fill; cursor: default"
-          />
-        </div>
-        <div>
-          <img
-            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=720/layout-engine/2023-07/Magazines-WEB.jpg"
-            alt="masthead_web_magazines"
-            width="335.40000000000003"
-            height="195"
-            loading="lazy"
-            style="border-radius: 16px; object-fit: fill; cursor: default"
-          />
-        </div>
-      </div>
-    </div>
-    <div class="my-categories">
-        <div>
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-12/paan-corner_web.png" alt="1 - Paan Corner" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-        </div>
-        <div>
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-2_10.png" alt="2 - Dairy, Bread &amp; Eggs" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-        </div>
-        <div>
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-12/paan-corner_web.png" alt="1 - Paan Corner" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-        </div>
-        <div>
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-12/paan-corner_web.png" alt="1 - Paan Corner" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-        </div>
-        <div>
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-12/paan-corner_web.png" alt="1 - Paan Corner" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-        </div>
-        <div>
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-2_10.png" alt="2 - Dairy, Bread &amp; Eggs" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-        </div>
-        <div>
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-12/paan-corner_web.png" alt="1 - Paan Corner" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-        </div>
-        <div>
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-2_10.png" alt="2 - Dairy, Bread &amp; Eggs" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-        </div>
-        <div>
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-12/paan-corner_web.png" alt="1 - Paan Corner" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-        </div>
-        <div>
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-2_10.png" alt="2 - Dairy, Bread &amp; Eggs" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-        </div>
-        <div>
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-12/paan-corner_web.png" alt="1 - Paan Corner" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-        </div>
-        <div>
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-2_10.png" alt="2 - Dairy, Bread &amp; Eggs" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-        </div>
-        <div>
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-12/paan-corner_web.png" alt="1 - Paan Corner" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-        </div>
-        <div>
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-2_10.png" alt="2 - Dairy, Bread &amp; Eggs" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-        </div>
-        <div>
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-12/paan-corner_web.png" alt="1 - Paan Corner" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-        </div>
-        <div>
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-2_10.png" alt="2 - Dairy, Bread &amp; Eggs" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-        </div>
-        <div>
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-12/paan-corner_web.png" alt="1 - Paan Corner" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-        </div>
-        <div>
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-2_10.png" alt="2 - Dairy, Bread &amp; Eggs" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-        </div>
-    </div>
-    <div class="my-category-div">
-        <h1>Dairy, Bread & Eggs</h1>
-        <div class="my-category-row">
-            <div class="my-card card shadow p-3">
-                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/464420a.jpg?ts=1687953675" alt="FruBon Pasteurized Double Toned Curd" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-                <div class="time-taken bg-light rounded"><i class="fa-solid fa-stopwatch" style="color: #1aff34;"></i> 18 MINS</div>
-                <p class="product-name">Cranberry Juice</p>
-                <p class="product-weight">1 L</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <p class="product-price m-0">₹118 </p>
-                    <button class="product-btn">Add</button>
-                </div>
-            </div>
-            <div class="my-card card shadow p-3">
-                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/464420a.jpg?ts=1687953675" alt="FruBon Pasteurized Double Toned Curd" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-                <div class="time-taken bg-light rounded"><i class="fa-solid fa-stopwatch" style="color: #1aff34;"></i> 18 MINS</div>
-                <p class="product-name">Cranberry Juice</p>
-                <p class="product-weight">1 L</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <p class="product-price m-0">₹118 </p>
-                    <button class="product-btn">Add</button>
-                </div>
-            </div>
-            <div class="my-card card shadow p-3">
-                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/464420a.jpg?ts=1687953675" alt="FruBon Pasteurized Double Toned Curd" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-                <div class="time-taken bg-light rounded"><i class="fa-solid fa-stopwatch" style="color: #1aff34;"></i> 18 MINS</div>
-                <p class="product-name">Cranberry Juice</p>
-                <p class="product-weight">1 L</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <p class="product-price m-0">₹118 </p>
-                    <button class="product-btn">Add</button>
-                </div>
-            </div>
-            <div class="my-card card shadow p-3">
-                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/464420a.jpg?ts=1687953675" alt="FruBon Pasteurized Double Toned Curd" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-                <div class="time-taken bg-light rounded"><i class="fa-solid fa-stopwatch" style="color: #1aff34;"></i> 18 MINS</div>
-                <p class="product-name">Cranberry Juice</p>
-                <p class="product-weight">1 L</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <p class="product-price m-0">₹118 </p>
-                    <button class="product-btn">Add</button>
-                </div>
-            </div>
-            <div class="my-card card shadow p-3">
-                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/464420a.jpg?ts=1687953675" alt="FruBon Pasteurized Double Toned Curd" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-                <div class="time-taken bg-light rounded"><i class="fa-solid fa-stopwatch" style="color: #1aff34;"></i> 18 MINS</div>
-                <p class="product-name">Cranberry Juice</p>
-                <p class="product-weight">1 L</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <p class="product-price m-0">₹118 </p>
-                    <button class="product-btn">Add</button>
-                </div>
-            </div>
-            <div class="my-card card shadow p-3">
-                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/464420a.jpg?ts=1687953675" alt="FruBon Pasteurized Double Toned Curd" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-                <div class="time-taken bg-light rounded"><i class="fa-solid fa-stopwatch" style="color: #1aff34;"></i> 18 MINS</div>
-                <p class="product-name">Cranberry Juice</p>
-                <p class="product-weight">1 L</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <p class="product-price m-0">₹118 </p>
-                    <button class="product-btn">Add</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="my-category-div">
-        <h1>Dairy, Bread & Eggs</h1>
-        <div class="my-category-row">
-            <div class="my-card card shadow p-3">
-                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/464420a.jpg?ts=1687953675" alt="FruBon Pasteurized Double Toned Curd" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-                <div class="time-taken bg-light rounded"><i class="fa-solid fa-stopwatch" style="color: #1aff34;"></i> 18 MINS</div>
-                <p class="product-name">Cranberry Juice</p>
-                <p class="product-weight">1 L</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <p class="product-price m-0">₹118 </p>
-                    <button class="product-btn">Add</button>
-                </div>
-            </div>
-            <div class="my-card card shadow p-3">
-                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/464420a.jpg?ts=1687953675" alt="FruBon Pasteurized Double Toned Curd" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-                <div class="time-taken bg-light rounded"><i class="fa-solid fa-stopwatch" style="color: #1aff34;"></i> 18 MINS</div>
-                <p class="product-name">Cranberry Juice</p>
-                <p class="product-weight">1 L</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <p class="product-price m-0">₹118 </p>
-                    <button class="product-btn">Add</button>
-                </div>
-            </div>
-            <div class="my-card card shadow p-3">
-                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/464420a.jpg?ts=1687953675" alt="FruBon Pasteurized Double Toned Curd" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-                <div class="time-taken bg-light rounded"><i class="fa-solid fa-stopwatch" style="color: #1aff34;"></i> 18 MINS</div>
-                <p class="product-name">Cranberry Juice</p>
-                <p class="product-weight">1 L</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <p class="product-price m-0">₹118 </p>
-                    <button class="product-btn">Add</button>
-                </div>
-            </div>
-            <div class="my-card card shadow p-3">
-                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/464420a.jpg?ts=1687953675" alt="FruBon Pasteurized Double Toned Curd" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-                <div class="time-taken bg-light rounded"><i class="fa-solid fa-stopwatch" style="color: #1aff34;"></i> 18 MINS</div>
-                <p class="product-name">Cranberry Juice</p>
-                <p class="product-weight">1 L</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <p class="product-price m-0">₹118 </p>
-                    <button class="product-btn">Add</button>
-                </div>
-            </div>
-            <div class="my-card card shadow p-3">
-                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/464420a.jpg?ts=1687953675" alt="FruBon Pasteurized Double Toned Curd" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-                <div class="time-taken bg-light rounded"><i class="fa-solid fa-stopwatch" style="color: #1aff34;"></i> 18 MINS</div>
-                <p class="product-name">Cranberry Juice</p>
-                <p class="product-weight">1 L</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <p class="product-price m-0">₹118 </p>
-                    <button class="product-btn">Add</button>
-                </div>
-            </div>
-            <div class="my-card card shadow p-3">
-                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/464420a.jpg?ts=1687953675" alt="FruBon Pasteurized Double Toned Curd" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-                <div class="time-taken bg-light rounded"><i class="fa-solid fa-stopwatch" style="color: #1aff34;"></i> 18 MINS</div>
-                <p class="product-name">Cranberry Juice</p>
-                <p class="product-weight">1 L</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <p class="product-price m-0">₹118 </p>
-                    <button class="product-btn">Add</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="my-category-div">
-        <h1>Dairy, Bread & Eggs</h1>
-        <div class="my-category-row">
-            <div class="my-card card shadow p-3">
-                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/464420a.jpg?ts=1687953675" alt="FruBon Pasteurized Double Toned Curd" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-                <div class="time-taken bg-light rounded"><i class="fa-solid fa-stopwatch" style="color: #1aff34;"></i> 18 MINS</div>
-                <p class="product-name">Cranberry Juice</p>
-                <p class="product-weight">1 L</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <p class="product-price m-0">₹118 </p>
-                    <button class="product-btn">Add</button>
-                </div>
-            </div>
-            <div class="my-card card shadow p-3">
-                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/464420a.jpg?ts=1687953675" alt="FruBon Pasteurized Double Toned Curd" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-                <div class="time-taken bg-light rounded"><i class="fa-solid fa-stopwatch" style="color: #1aff34;"></i> 18 MINS</div>
-                <p class="product-name">Cranberry Juice</p>
-                <p class="product-weight">1 L</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <p class="product-price m-0">₹118 </p>
-                    <button class="product-btn">Add</button>
-                </div>
-            </div>
-            <div class="my-card card shadow p-3">
-                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/464420a.jpg?ts=1687953675" alt="FruBon Pasteurized Double Toned Curd" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-                <div class="time-taken bg-light rounded"><i class="fa-solid fa-stopwatch" style="color: #1aff34;"></i> 18 MINS</div>
-                <p class="product-name">Cranberry Juice</p>
-                <p class="product-weight">1 L</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <p class="product-price m-0">₹118 </p>
-                    <button class="product-btn">Add</button>
-                </div>
-            </div>
-            <div class="my-card card shadow p-3">
-                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/464420a.jpg?ts=1687953675" alt="FruBon Pasteurized Double Toned Curd" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-                <div class="time-taken bg-light rounded"><i class="fa-solid fa-stopwatch" style="color: #1aff34;"></i> 18 MINS</div>
-                <p class="product-name">Cranberry Juice</p>
-                <p class="product-weight">1 L</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <p class="product-price m-0">₹118 </p>
-                    <button class="product-btn">Add</button>
-                </div>
-            </div>
-            <div class="my-card card shadow p-3">
-                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/464420a.jpg?ts=1687953675" alt="FruBon Pasteurized Double Toned Curd" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-                <div class="time-taken bg-light rounded"><i class="fa-solid fa-stopwatch" style="color: #1aff34;"></i> 18 MINS</div>
-                <p class="product-name">Cranberry Juice</p>
-                <p class="product-weight">1 L</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <p class="product-price m-0">₹118 </p>
-                    <button class="product-btn">Add</button>
-                </div>
-            </div>
-            <div class="my-card card shadow p-3">
-                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/464420a.jpg?ts=1687953675" alt="FruBon Pasteurized Double Toned Curd" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-                <div class="time-taken bg-light rounded"><i class="fa-solid fa-stopwatch" style="color: #1aff34;"></i> 18 MINS</div>
-                <p class="product-name">Cranberry Juice</p>
-                <p class="product-weight">1 L</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <p class="product-price m-0">₹118 </p>
-                    <button class="product-btn">Add</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="my-category-div">
-        <h1>Dairy, Bread & Eggs</h1>
-        <div class="my-category-row">
-            <div class="my-card card shadow p-3">
-                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/464420a.jpg?ts=1687953675" alt="FruBon Pasteurized Double Toned Curd" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-                <div class="time-taken bg-light rounded"><i class="fa-solid fa-stopwatch" style="color: #1aff34;"></i> 18 MINS</div>
-                <p class="product-name">Cranberry Juice</p>
-                <p class="product-weight">1 L</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <p class="product-price m-0">₹118 </p>
-                    <button class="product-btn">Add</button>
-                </div>
-            </div>
-            <div class="my-card card shadow p-3">
-                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/464420a.jpg?ts=1687953675" alt="FruBon Pasteurized Double Toned Curd" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-                <div class="time-taken bg-light rounded"><i class="fa-solid fa-stopwatch" style="color: #1aff34;"></i> 18 MINS</div>
-                <p class="product-name">Cranberry Juice</p>
-                <p class="product-weight">1 L</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <p class="product-price m-0">₹118 </p>
-                    <button class="product-btn">Add</button>
-                </div>
-            </div>
-            <div class="my-card card shadow p-3">
-                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/464420a.jpg?ts=1687953675" alt="FruBon Pasteurized Double Toned Curd" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-                <div class="time-taken bg-light rounded"><i class="fa-solid fa-stopwatch" style="color: #1aff34;"></i> 18 MINS</div>
-                <p class="product-name">Cranberry Juice</p>
-                <p class="product-weight">1 L</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <p class="product-price m-0">₹118 </p>
-                    <button class="product-btn">Add</button>
-                </div>
-            </div>
-            <div class="my-card card shadow p-3">
-                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/464420a.jpg?ts=1687953675" alt="FruBon Pasteurized Double Toned Curd" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-                <div class="time-taken bg-light rounded"><i class="fa-solid fa-stopwatch" style="color: #1aff34;"></i> 18 MINS</div>
-                <p class="product-name">Cranberry Juice</p>
-                <p class="product-weight">1 L</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <p class="product-price m-0">₹118 </p>
-                    <button class="product-btn">Add</button>
-                </div>
-            </div>
-            <div class="my-card card shadow p-3">
-                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/464420a.jpg?ts=1687953675" alt="FruBon Pasteurized Double Toned Curd" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-                <div class="time-taken bg-light rounded"><i class="fa-solid fa-stopwatch" style="color: #1aff34;"></i> 18 MINS</div>
-                <p class="product-name">Cranberry Juice</p>
-                <p class="product-weight">1 L</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <p class="product-price m-0">₹118 </p>
-                    <button class="product-btn">Add</button>
-                </div>
-            </div>
-            <div class="my-card card shadow p-3">
-                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/464420a.jpg?ts=1687953675" alt="FruBon Pasteurized Double Toned Curd" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-                <div class="time-taken bg-light rounded"><i class="fa-solid fa-stopwatch" style="color: #1aff34;"></i> 18 MINS</div>
-                <p class="product-name">Cranberry Juice</p>
-                <p class="product-weight">1 L</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <p class="product-price m-0">₹118 </p>
-                    <button class="product-btn">Add</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <footer class="my-footer">
-        <div class="row-1">
+<body>
+    <div class="container-fluid">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid me-3">
+                <a class="navbar-brand" href="#"><svg width="134" height="30" viewBox="0 0 114 30" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.3342 7.186C16.2619 7.186 17.9832 7.66644 19.4978 8.62732C21.0262 9.57447 22.2242 10.9197 23.0917 12.663C23.9316 14.3377 24.3516 16.3075 24.3516 18.5724C24.3516 20.7687 23.9316 22.7316 23.0917 24.4612C22.2517 26.1908 21.0675 27.5429 19.5391 28.5175C17.9969 29.5058 16.2619 30 14.3342 30C12.9297 30 11.6078 29.7117 10.3685 29.1352C9.12927 28.5587 8.06901 27.7488 7.18775 26.7056V29.4852H0V0H7.18775V10.4598C8.06901 9.41661 9.12927 8.61359 10.3685 8.05079C11.6078 7.47426 12.9297 7.186 14.3342 7.186ZM12.1861 24.0494C13.2051 24.0494 14.1139 23.8161 14.9125 23.3493C15.7112 22.8826 16.3377 22.2306 16.7921 21.3933C17.2465 20.5697 17.4737 19.6294 17.4737 18.5724C17.4737 17.5429 17.2465 16.6095 16.7921 15.7721C16.3377 14.9348 15.7112 14.2828 14.9125 13.8161C14.1139 13.3493 13.2051 13.116 12.1861 13.116C11.2223 13.116 10.3617 13.3493 9.60432 13.8161C8.84699 14.269 8.2549 14.9073 7.82804 15.731C7.40118 16.5683 7.18775 17.5154 7.18775 18.5724C7.18775 19.6294 7.40118 20.5765 7.82804 21.4139C8.2549 22.2375 8.84699 22.8826 9.60432 23.3493C10.3617 23.8161 11.2223 24.0494 12.1861 24.0494Z"
+                            fill="#F8CB46"></path>
+                        <path d="M25.3356 29.4852V0H32.5233V29.4852H25.3356Z" fill="#F8CB46"></path>
+                        <path d="M34.5607 29.4852V7.68016H41.7071V29.4852H34.5607Z" fill="#F8CB46"></path>
+                        <path
+                            d="M57.2319 7.186C58.7603 7.186 60.1372 7.5429 61.3627 8.25669C62.5882 8.95676 63.5521 9.94509 64.2544 11.2217C64.9291 12.512 65.2664 13.9739 65.2664 15.6074V29.4852H58.4092V17.2135C58.4092 16.4173 58.2508 15.7104 57.9341 15.0927C57.6312 14.4612 57.1974 13.9739 56.6329 13.6307C56.0821 13.2876 55.4349 13.116 54.6914 13.116C53.9891 13.116 53.3419 13.2876 52.7498 13.6307C52.1577 13.9602 51.6965 14.4132 51.366 14.9897C51.0218 15.5388 50.8496 16.1839 50.8496 16.9252L50.8083 29.4852H43.6619V7.68016H50.8083V10.1716C51.483 9.23816 52.3849 8.51064 53.5141 7.98902C54.6432 7.45367 55.8824 7.186 57.2319 7.186Z"
+                            fill="#F8CB46"></path>
+                        <path
+                            d="M81.0597 17.2135L89.1769 29.4852H81.0597L76.3091 21.7639L74.1198 24.2965V29.4852H66.932V0H74.1198V16.2869L81.0184 7.68016H89.1356L81.0597 17.2135Z"
+                            fill="#F8CB46"></path>
+                        <path d="M34.5569 0.00232667H41.7267V5.59207H34.5569V0.00232667Z" fill="#F8CB46"></path>
+                        <path d="M90.3176 29.4198V7.61479H97.464V29.4198H90.3176Z" fill="#54B226"></path>
+                        <path
+                            d="M112.575 23.2634L114 27.855C113.353 28.4727 112.534 28.9737 111.542 29.3581C110.564 29.7424 109.607 29.9346 108.671 29.9346C107.322 29.9346 106.117 29.6395 105.057 29.0492C103.996 28.4452 103.17 27.6079 102.578 26.5372C101.986 25.494 101.69 24.2929 101.69 22.9339V13.3183H98.819V7.61479H101.69V0.00241089H108.547V7.61479H113.071V13.3183H108.547V21.6161C108.547 22.3162 108.733 22.8859 109.105 23.3251C109.477 23.7644 109.952 23.984 110.53 23.984C110.943 23.984 111.329 23.9223 111.687 23.7987C112.045 23.6752 112.341 23.4967 112.575 23.2634Z"
+                            fill="#54B226"></path>
+                        <path d="M90.2609 0.00241089H97.4307V5.59215H90.2609V0.00241089Z" fill="#54B226"></path>
+                    </svg></a>
 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <div class="vertical-line"></div>
+                        </li>
+                        <li class="location">
+                            <h5 class="fw-bolder">Delivery in 14 minutes</h5>
+                            <p>Mumbai,India &nbsp;<i class="fa-solid fa-sort-down"></i></p>
+                        </li>
+
+                        <li class="d-flex search-bar">
+                            <i class="search-icon fa-solid fa-magnifying-glass"></i>
+                            <input class="form-control" type="search" placeholder="Search 'Egg'" aria-label="Search">
+                        </li>
+
+                        <li><button class="btn fs-5 login-btn">Login</button></li>
+
+                        <li>
+                            <button class="btn btn-success btn-lg my-cart">
+                                <i class="fa-solid fa-cart-shopping"></i> My Cart
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- banner -->
+        <div class="banner">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=2700/layout-engine/2022-05/Group-33704.jpg"
+                alt="paan corner banner" class="img-fluid" />
+        </div>
+
+        <!-- scrollable-div -->
+        <div class="conatiner scrollable-div">
+            <div class="scrollable-div-item">
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=540/layout-engine/2023-07/Web-HFS-banner.jpg"
+                    alt="" class="img-fluid" />
+
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=540/layout-engine/2023-03/beauty-WEB.jpg"
+                    alt="" class="img-fluid" />
+
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=540/layout-engine/2023-07/electronics-WEB.jpg"
+                    alt="" class="img-fluid" />
+
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=540/layout-engine/2023-07/pharmacy-WEB.jpg"
+                    alt="" class="img-fluid" />
+
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=540/layout-engine/2023-03/babycare-WEB.jpg"
+                    alt="" class="img-fluid" />
+
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=540/layout-engine/2023-07/Pet-Care_WEB.jpg"
+                    alt="" class="img-fluid" />
+                 
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=720/layout-engine/2023-07/Magazines-WEB.jpg"
+                    alt="" class="img-fluid" />    
+            </div>
+        </div>
+
+        <!-- All Category -->
+        <div class="conatiner-lg all-caltegories">
+            <div class="d-flex flex-wrap justify-content-between">
+                <div class="">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-12/paan-corner_web.png"
+                        alt="" class="img-fluid" />
+                </div>
+
+                <div class="">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-2_10.png"
+                        alt="" class="img-fluid" />
+                </div>
+
+                <div class="">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-3_9.png"
+                        alt="" class="img-fluid" />
+                </div>
+
+                <div class="">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-4_9.png"
+                        alt="" class="img-fluid" />
+                </div>
+
+                <div class="">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-5_4.png"
+                        alt="" class="img-fluid" />
+                </div>
+
+                <div class="">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-6_5.png"
+                        alt="" class="img-fluid" />
+                </div>
+
+                <div class="">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-7_3.png"
+                        alt="" class="img-fluid" />
+                </div>
+
+                <div class="">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-8_4.png"
+                        alt="" class="img-fluid" />
+                </div>
+
+                <div class="">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-9_3.png"
+                        alt="" class="img-fluid" />
+                </div>
+
+                <div class="">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-11.png"
+                        alt="" class="img-fluid" />
+                </div>
+
+                <div class="">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-12.png"
+                        alt="" class="img-fluid" />
+                </div>
+
+                <div class="">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-14.png"
+                        alt="" class="img-fluid" />
+                </div>
+
+                <div class="">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-15.png"
+                        alt="" class="img-fluid" />
+                </div>
+
+                <div class="">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-16.png"
+                        alt="" class="img-fluid" />
+                </div>
+
+                <div class="">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-17.png"
+                        alt="" class="img-fluid" />
+                </div>
+
+                <div class="">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-18.png"
+                        alt="" class="img-fluid" />
+                </div>
+
+                <div class="">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-19.png"
+                        alt="" class="img-fluid" />
+                </div>
+
+                <div class="">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-20.png"
+                        alt="" class="img-fluid" />
+                </div>
+
+            </div>
+        </div>
+
+         <!--special-scrollable-categories-div1-->
+        <div class="heading">
+            <h4>Dairy, Breads and Eggs</h4>
+            <h5 class="text-success">see all</h5>
+        </div>
+        <div class="conatiner-lg special-scrollable-categories-div mt-5">
+            <div class="scrollable-div-item-2">
+                <div class="my-card card shadow-sm p-3">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/86446a.jpg?ts=1641540332" alt="FruBon Curd" class="img-fluid" loading="lazy"
+                         />
+                    <div class="time-taken bg-light rounded">
+                        <i class="fa-solid fa-stopwatch" style="color: #b7b9bd"></i> 14
+                        min.
+                    </div>
+                    <p class="product-name">FRUBUN Ydahi</p>
+                    <p class="product-weight">400 g</p>
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                        <p class="product-price m-0">Rs.50</p>
+                        <button class="add-btn">ADD</button>
+                    </div>
+                </div>
+
+                <div class="my-card card shadow-sm p-3">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/10491a.jpg" alt="FruBon Curd" class="img-fluid" loading="lazy"
+                         />
+                    <div class="time-taken bg-light rounded">
+                        <i class="fa-solid fa-stopwatch" style="color: #b7b9bd"></i> 14
+                        min.
+                    </div>
+                    <p class="product-name">FRUBUN Ydahi</p>
+                    <p class="product-weight">500 g</p>
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                        <p class="product-price m-0">Rs.50</p>
+                        <button class="add-btn">ADD</button>
+                    </div>
+                </div>
+
+                <div class="my-card card shadow-sm p-3">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/483705a.jpg?ts=1657805510" alt="FruBon Curd" class="img-fluid" loading="lazy"
+                         />
+                    <div class="time-taken bg-light rounded">
+                        <i class="fa-solid fa-stopwatch" style="color: #b7b9bd"></i> 14
+                        min.
+                    </div>
+                    <p class="product-name">FRUBUN Ydahi</p>
+                    <p class="product-weight">300 g</p>
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                        <p class="product-price m-0">Rs.60</p>
+                        <button class="add-btn">ADD</button>
+                    </div>
+                </div>
+
+                <div class="my-card card shadow-sm p-3">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/24194a.jpg?ts=1661157751" alt="FruBon Curd" class="img-fluid" loading="lazy"
+                         />
+                    <div class="time-taken bg-light rounded">
+                        <i class="fa-solid fa-stopwatch" style="color: #b7b9bd"></i> 14
+                        min.
+                    </div>
+                    <p class="product-name">FRUBUN Ydahi</p>
+                    <p class="product-weight">400 g</p>
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                        <p class="product-price m-0">Rs.60</p>
+                        <button class="add-btn">ADD</button>
+                    </div>
+                </div>
+
+                <div class="my-card card shadow-sm p-3">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/192a.jpg?ts=1644908944" alt="FruBon Curd" class="img-fluid" loading="lazy"
+                         />
+                    <div class="time-taken bg-light rounded">
+                        <i class="fa-solid fa-stopwatch" style="color: #b7b9bd"></i> 14
+                        min.
+                    </div>
+                    <p class="product-name">FRUBUN Ydahi</p>
+                    <p class="product-weight">250 g</p>
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                        <p class="product-price m-0">Rs.40</p>
+                        <button class="add-btn">ADD</button>
+                    </div>
+                </div>
+
+                <div class="my-card card shadow-sm p-3">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/160a.jpg?ts=1654778815" alt="FruBon Curd" class="img-fluid" loading="lazy"
+                         />
+                    <div class="time-taken bg-light rounded">
+                        <i class="fa-solid fa-stopwatch" style="color: #b7b9bd"></i> 14
+                        min.
+                    </div>
+                    <p class="product-name">FRUBUN Ydahi</p>
+                    <p class="product-weight">500 g</p>
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                        <p class="product-price m-0">Rs.90</p>
+                        <button class="add-btn">ADD</button>
+                    </div>
+                </div>
+
+                <div class="my-card card shadow-sm p-3">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/45533a.jpg?ts=1654845569" alt="FruBon Curd" class="img-fluid" loading="lazy"
+                         />
+                    <div class="time-taken bg-light rounded">
+                        <i class="fa-solid fa-stopwatch" style="color: #b7b9bd"></i> 14
+                        min.
+                    </div>
+                    <p class="product-name">FRUBUN Ydahi</p>
+                    <p class="product-weight">150 g</p>
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                        <p class="product-price m-0">Rs.30</p>
+                        <button class="add-btn">ADD</button>
+                    </div>
+                </div>
+
+                <div class="my-card card shadow-sm p-3">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/448095a.jpg?ts=1661157752"
+                        alt="FruBon Curd" class="img-fluid" loading="lazy"
+                        style="border-radius: 0px; object-fit: fill; cursor: default" />
+                    <div class="time-taken bg-light rounded">
+                        <i class="fa-solid fa-stopwatch" style="color: #b7b9bd"></i> 14
+                        min.
+                    </div>
+                    <p class="product-name">FRUBUN Ydahi</p>
+                    <p class="product-weight">300 g</p>
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                        <p class="product-price m-0">Rs.90</p>
+                        <button class="add-btn">ADD</button>
+                    </div>
+                </div>
+
+                <div class="my-card card shadow-sm p-3">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=225/app/images/products/sliding_image/320075a.jpg?ts=1688629830" alt="FruBon Curd" class="img-fluid" loading="lazy"
+                         />
+                    <div class="time-taken bg-light rounded">
+                        <i class="fa-solid fa-stopwatch" style="color: #b7b9bd"></i> 14
+                        min.
+                    </div>
+                    <p class="product-name">FRUBUN Ydahi</p>
+                    <p class="product-weight">250 g</p>
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                        <p class="product-price m-0">Rs.50</p>
+                        <button class="add-btn">ADD</button>
+                    </div>
+                </div>
+
+                <div class="my-card card shadow-sm p-3">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=225/app/images/products/sliding_image/123007a.jpg?ts=1688973208"
+                        alt="FruBon Curd" class="img-fluid" loading="lazy"
+                        style="border-radius: 0px; object-fit: fill; cursor: default" />
+                    <div class="time-taken bg-light rounded">
+                        <i class="fa-solid fa-stopwatch" style="color: #b7b9bd"></i> 14
+                        min.
+                    </div>
+                    <p class="product-name">FRUBUN Ydahi</p>
+                    <p class="product-weight">400 g</p>
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                        <p class="product-price m-0">Rs.90</p>
+                        <button class="add-btn">ADD</button>
+                    </div>
+                </div>
+
+                <div class="my-card card shadow-sm p-3">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=225/app/images/products/sliding_image/26164a.jpg?ts=1690814323"
+                        alt="FruBon Curd" class="img-fluid" loading="lazy"
+                        style="border-radius: 0px; object-fit: fill; cursor: default" />
+                    <div class="time-taken bg-light rounded">
+                        <i class="fa-solid fa-stopwatch" style="color: #b7b9bd"></i> 14
+                        min.
+                    </div>
+                    <p class="product-name">FRUBUN Ydahi</p>
+                    <p class="product-weight">450 g</p>
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                        <p class="product-price m-0">Rs.90</p>
+                        <button class="add-btn">ADD</button>
+                    </div>
+                </div>
+
+                <div class="my-card card shadow-sm p-3">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=225/app/images/products/sliding_image/329500a.jpg?ts=1687949315"
+                        alt="FruBon Curd" class="img-fluid" loading="lazy"
+                        style="border-radius: 0px; object-fit: fill; cursor: default" />
+                    <div class="time-taken bg-light rounded">
+                        <i class="fa-solid fa-stopwatch" style="color: #b7b9bd"></i> 14
+                        min.
+                    </div>
+                    <p class="product-name">FRUBUN Ydahi</p>
+                    <p class="product-weight">200 g</p>
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                        <p class="product-price m-0">Rs.99</p>
+                        <button class="add-btn">ADD</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         
-        <table class="table-1">
-            <thead>
-                <tr >
-                    <th  colspan="3"><h2>Useful links</h2></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>About</td>
-                    <td>Privacy</td>
-                    <td>Partner</td>
-                </tr>
-                <tr>
-                    <td>About</td>
-                    <td>Privacy</td>
-                    <td>Partner</td>
-                </tr>
-                <tr>
-                    <td>About</td>
-                    <td>Privacy</td>
-                    <td>Partner</td>
-                </tr>
-                <tr>
-                    <td>About</td>
-                    <td>Privacy</td>
-                    <td>Partner</td>
-                </tr>
-                <tr>
-                    <td>About</td>
-                    <td>Privacy</td>
-                    <td>Partner</td>
-                </tr>
-                <tr>
-                    <td>About</td>
-                    <td>Privacy</td>
-                    <td>Partner</td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table-2">
-            <thead>
-                <tr >
-                    <th  colspan="3"><h2>Categories</h2></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Vegetables & Fruits</td>
-                    <td>Dairy & Breakfast</td>
-                    <td>Munchies</td>
-                </tr>
-                <tr>
-                    <td>Vegetables & Fruits</td>
-                    <td>Dairy & Breakfast</td>
-                    <td>Munchies</td>
-                </tr>
-                <tr>
-                    <td>Vegetables & Fruits</td>
-                    <td>Dairy & Breakfast</td>
-                    <td>Munchies</td>
-                </tr>
-                <tr>
-                    <td>Vegetables & Fruits</td>
-                    <td>Dairy & Breakfast</td>
-                    <td>Munchies</td>
-                </tr>
-                <tr>
-                    <td>Vegetables & Fruits</td>
-                    <td>Dairy & Breakfast</td>
-                    <td>Munchies</td>
-                </tr>
-                <tr>
-                    <td>Vegetables & Fruits</td>
-                    <td>Dairy & Breakfast</td>
-                    <td>Munchies</td>
-                </tr>
-                <tr>
-                    <td>Vegetables & Fruits</td>
-                    <td>Dairy & Breakfast</td>
-                    <td>Munchies</td>
-                </tr>
-                <tr>
-                    <td>Vegetables & Fruits</td>
-                    <td>Dairy & Breakfast</td>
-                    <td>Munchies</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-        <div class="row-2">
-            <div class="row-2-col-1">
-                © Blink Commerce Private Limited (formerly known as Grofers India Private Limited), 2016-2023
-            </div>
-            <div class="row-2-col-2">
-                <div>Download App</div>
-                <button >Play store</button>
-                <button>App store</button>
-            </div>
-            <div class="row-2-col-3">
-                <a href="#"><i class="fa-brands fa-instagram" style="color: #ffffff;" ></i></a>
-                <a href="#"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"  style="color: #ffffff;"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
-                <a href="#"><i class="fa-brands fa-reddit-alien" style="color: #ffffff;"></i></a>
-            </div>
+        <!--special-scrollable-categories-div2-->
+        <div class="heading">
+            <h4>Snacks & Munchies</h4>
+            <h5 class="text-success">see all</h5>
         </div>
-        <div class="row-3">
-            “Blinkit” is owned & managed by "Blink Commerce Private Limited" (formerly known as Grofers India Private Limited) and is not related, linked or interconnected in whatsoever manner or nature, to “GROFFR.COM” which is a real estate services business operated by “Redstone Consultancy Services Private Limited”.
-        </div>
-        <footer>Made with ❤️ by Tej Bari</footer>
+        <div class="conatiner-lg special-scrollable-categories-div mt-5">
+            <div class="scrollable-div-item-2">
+                <div class="my-card card shadow-sm p-3">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=225/app/images/products/sliding_image/240092a.jpg?ts=1687324818" alt="FruBon Curd" class="img-fluid" loading="lazy"
+                         />
+                    <div class="time-taken bg-light rounded">
+                        <i class="fa-solid fa-stopwatch" style="color: #b7b9bd"></i> 14
+                        min.
+                    </div>
+                    <p class="product-name">Lay's Masala Chips</p>
+                    <p class="product-weight">40 g</p>
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                        <p class="product-price m-0">Rs.20</p>
+                        <button class="add-btn">ADD</button>
+                    </div>
+                </div>
+                
+                <div class="my-card card shadow-sm p-3">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=225/app/images/products/sliding_image/372138a.jpg?ts=1687616753" alt="FruBon Curd" class="img-fluid" loading="lazy"
+                         />
+                    <div class="time-taken bg-light rounded">
+                        <i class="fa-solid fa-stopwatch" style="color: #b7b9bd"></i> 14
+                        min.
+                    </div>
+                    <p class="product-name">Chheda's Farsan</p>
+                    <p class="product-weight">170 g</p>
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                        <p class="product-price m-0">Rs.45</p>
+                        <button class="add-btn">ADD</button>
+                    </div>
+                </div>
 
-    </footer>
-    <!-- bootsrap js cdn -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+                <div class="my-card card shadow-sm p-3">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=225/app/images/products/sliding_image/138835a.jpg?ts=1688469112" alt="FruBon Curd" class="img-fluid" loading="lazy"
+                         />
+                    <div class="time-taken bg-light rounded">
+                        <i class="fa-solid fa-stopwatch" style="color: #b7b9bd"></i> 14
+                        min.
+                    </div>
+                    <p class="product-name">Lijjat Plain Urad Papad</p>
+                    <p class="product-weight">200 g</p>
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                        <p class="product-price m-0">Rs.72</p>
+                        <button class="add-btn">ADD</button>
+                    </div>
+                </div>
+
+                <div class="my-card card shadow-sm p-3">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=225/app/images/products/sliding_image/474817a.jpg?ts=1687332010" alt="FruBon Curd" class="img-fluid" loading="lazy"
+                         />
+                    <div class="time-taken bg-light rounded">
+                        <i class="fa-solid fa-stopwatch" style="color: #b7b9bd"></i> 14
+                        min.
+                    </div>
+                    <p class="product-name">FRUBUN Ydahi</p>
+                    <p class="product-weight">75 g</p>
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                        <p class="product-price m-0">Rs.120</p>
+                        <button class="add-btn">ADD</button>
+                    </div>
+                </div>
+
+                <div class="my-card card shadow-sm p-3">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=225/app/images/products/sliding_image/36018a.jpg?ts=1690813599" alt="FruBon Curd" class="img-fluid" loading="lazy"
+                         />
+                    <div class="time-taken bg-light rounded">
+                        <i class="fa-solid fa-stopwatch" style="color: #b7b9bd"></i> 14
+                        min.
+                    </div>
+                    <p class="product-name">FRUBUN Ydahi</p>
+                    <p class="product-weight">200 g</p>
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                        <p class="product-price m-0">Rs.45</p>
+                        <button class="add-btn">ADD</button>
+                    </div>
+                </div>
+
+                <div class="my-card card shadow-sm p-3">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=225/app/images/products/sliding_image/54056a.jpg?ts=1687525097" alt="FruBon Curd" class="img-fluid" loading="lazy"
+                         />
+                    <div class="time-taken bg-light rounded">
+                        <i class="fa-solid fa-stopwatch" style="color: #b7b9bd"></i> 14
+                        min.
+                    </div>
+                    <p class="product-name">FRUBUN Ydahi</p>
+                    <p class="product-weight">30 g</p>
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                        <p class="product-price m-0">Rs.10</p>
+                        <button class="add-btn">ADD</button>
+                    </div>
+                </div>
+
+                <div class="my-card card shadow-sm p-3">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=225/app/images/products/sliding_image/11150a.jpg?ts=1688463551" alt="FruBon Curd" class="img-fluid" loading="lazy"
+                         />
+                    <div class="time-taken bg-light rounded">
+                        <i class="fa-solid fa-stopwatch" style="color: #b7b9bd"></i> 14
+                        min.
+                    </div>
+                    <p class="product-name">FRUBUN Ydahi</p>
+                    <p class="product-weight">50 g</p>
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                        <p class="product-price m-0">Rs.20</p>
+                        <button class="add-btn">ADD</button>
+                    </div>
+                </div>
+
+                <div class="my-card card shadow-sm p-3">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=225/app/images/products/sliding_image/289152a.jpg?ts=1684345618" alt="FruBon Curd" class="img-fluid" loading="lazy"
+                         />
+                    <div class="time-taken bg-light rounded">
+                        <i class="fa-solid fa-stopwatch" style="color: #b7b9bd"></i> 14
+                        min.
+                    </div>
+                    <p class="product-name">FRUBUN Ydahi</p>
+                    <p class="product-weight">48 g</p>
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                        <p class="product-price m-0">Rs.20</p>
+                        <button class="add-btn">ADD</button>
+                    </div>
+                </div>
+
+                <div class="my-card card shadow-sm p-3">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=225/app/images/products/sliding_image/19250a.jpg?ts=1690817486" alt="FruBon Curd" class="img-fluid" loading="lazy"
+                         />
+                    <div class="time-taken bg-light rounded">
+                        <i class="fa-solid fa-stopwatch" style="color: #b7b9bd"></i> 14
+                        min.
+                    </div>
+                    <p class="product-name">FRUBUN Ydahi</p>
+                    <p class="product-weight">1 Kg</p>
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                        <p class="product-price m-0">Rs.225</p>
+                        <button class="add-btn">ADD</button>
+                    </div>
+                </div>
+
+                <div class="my-card card shadow-sm p-3">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=225/app/images/products/sliding_image/67372a.jpg?ts=1687948910" alt="FruBon Curd" class="img-fluid" loading="lazy"
+                         />
+                    <div class="time-taken bg-light rounded">
+                        <i class="fa-solid fa-stopwatch" style="color: #b7b9bd"></i> 14
+                        min.
+                    </div>
+                    <p class="product-name">FRUBUN Ydahi</p>
+                    <p class="product-weight">1 Kg</p>
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                        <p class="product-price m-0">Rs.256</p>
+                        <button class="add-btn">ADD</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!--special-scrollable-categories-div3-->
+        <div class="heading">
+            <h4>Cold Drinks & Juices</h4>
+            <h5 class="text-success">see all</h5>
+        </div>
+        <div class="conatiner-lg special-scrollable-categories-div mt-5">
+            <div class="scrollable-div-item-2">
+                <div class="my-card card shadow-sm p-3">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=225/app/images/products/sliding_image/385a.jpg?ts=1689327544" alt="FruBon Curd" class="img-fluid" loading="lazy"
+                         />
+                    <div class="time-taken bg-light rounded">
+                        <i class="fa-solid fa-stopwatch" style="color: #b7b9bd"></i> 14
+                        min.
+                    </div>
+                    <p class="product-name">Red Bull</p>
+                    <p class="product-weight">250 ml</p>
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                        <p class="product-price m-0">Rs.99</p>
+                        <button class="add-btn">ADD</button>
+                    </div>
+                </div>
+
+                <div class="my-card card shadow-sm p-3">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=225/app/images/products/sliding_image/97250a.jpg?ts=1688628274" alt="FruBon Curd" class="img-fluid" loading="lazy"
+                         />
+                    <div class="time-taken bg-light rounded">
+                        <i class="fa-solid fa-stopwatch" style="color: #b7b9bd"></i> 14
+                        min.
+                    </div>
+                    <p class="product-name">Maaza Mango</p>
+                    <p class="product-weight">1.2 l</p>
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                        <p class="product-price m-0">Rs.75</p>
+                        <button class="add-btn">ADD</button>
+                    </div>
+                </div>
+
+                <div class="my-card card shadow-sm p-3">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=225/app/images/products/sliding_image/34353a.jpg?ts=1690814578" alt="FruBon Curd" class="img-fluid" loading="lazy"
+                         />
+                    <div class="time-taken bg-light rounded">
+                        <i class="fa-solid fa-stopwatch" style="color: #b7b9bd"></i> 14
+                        min.
+                    </div>
+                    <p class="product-name">Bisleri Water</p>
+                    <p class="product-weight">5 l</p>
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                        <p class="product-price m-0">Rs.70</p>
+                        <button class="add-btn">ADD</button>
+                    </div>
+                </div>
+
+                <div class="my-card card shadow-sm p-3">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=225/app/images/products/sliding_image/314a.jpg?ts=1690814449" alt="FruBon Curd" class="img-fluid" loading="lazy"
+                         />
+                    <div class="time-taken bg-light rounded">
+                        <i class="fa-solid fa-stopwatch" style="color: #b7b9bd"></i> 14
+                        min.
+                    </div>
+                    <p class="product-name">Thums Up</p>
+                    <p class="product-weight">750 ml</p>
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                        <p class="product-price m-0">Rs.40</p>
+                        <button class="add-btn">ADD</button>
+                    </div>
+                </div>
+
+                <div class="my-card card shadow-sm p-3">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=225/app/images/products/sliding_image/283a.jpg?ts=1689327540" alt="FruBon Curd" class="img-fluid" loading="lazy"
+                         />
+                    <div class="time-taken bg-light rounded">
+                        <i class="fa-solid fa-stopwatch" style="color: #b7b9bd"></i> 14
+                        min.
+                    </div>
+                    <p class="product-name">Coca-Cola</p>
+                    <p class="product-weight">750 ml</p>
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                        <p class="product-price m-0">Rs.40</p>
+                        <button class="add-btn">ADD</button>
+                    </div>
+                </div>
+
+                <div class="my-card card shadow-sm p-3">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=225/app/images/products/sliding_image/311a.jpg?ts=1689327541" alt="FruBon Curd" class="img-fluid" loading="lazy"
+                         />
+                    <div class="time-taken bg-light rounded">
+                        <i class="fa-solid fa-stopwatch" style="color: #b7b9bd"></i> 14
+                        min.
+                    </div>
+                    <p class="product-name">Slice</p>
+                    <p class="product-weight">600 ml</p>
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                        <p class="product-price m-0">Rs.40</p>
+                        <button class="add-btn">ADD</button>
+                    </div>
+                </div>
+
+                <div class="my-card card shadow-sm p-3">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=225/app/images/products/sliding_image/34354a.jpg?ts=1687263266" alt="FruBon Curd" class="img-fluid" loading="lazy"
+                         />
+                    <div class="time-taken bg-light rounded">
+                        <i class="fa-solid fa-stopwatch" style="color: #b7b9bd"></i> 14
+                        min.
+                    </div>
+                    <p class="product-name">Bisleri Soda Water</p>
+                    <p class="product-weight">750 ml</p>
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                        <p class="product-price m-0">Rs.20</p>
+                        <button class="add-btn">ADD</button>
+                    </div>
+                </div>
+
+                <div class="my-card card shadow-sm p-3">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=225/app/images/products/sliding_image/480578a.jpg?ts=1687333264" alt="FruBon Curd" class="img-fluid" loading="lazy"
+                         />
+                    <div class="time-taken bg-light rounded">
+                        <i class="fa-solid fa-stopwatch" style="color: #b7b9bd"></i> 14
+                        min.
+                    </div>
+                    <p class="product-name">Paper Boat</p>
+                    <p class="product-weight">650 ml</p>
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                        <p class="product-price m-0">Rs.38</p>
+                        <button class="add-btn">ADD</button>
+                    </div>
+                </div>
+
+                <div class="my-card card shadow-sm p-3">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=225/app/images/products/sliding_image/480579a.jpg?ts=1684479589" alt="FruBon Curd" class="img-fluid" loading="lazy"
+                         />
+                    <div class="time-taken bg-light rounded">
+                        <i class="fa-solid fa-stopwatch" style="color: #b7b9bd"></i> 14
+                        min.
+                    </div>
+                    <p class="product-name">Paper Boat</p>
+                    <p class="product-weight">650 ml</p>
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                        <p class="product-price m-0">Rs.38</p>
+                        <button class="add-btn">ADD</button>
+                    </div>
+                </div>
+
+                <div class="my-card card shadow-sm p-3">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=225/app/images/products/sliding_image/455587a.jpg?ts=1690985838" alt="FruBon Curd" class="img-fluid" loading="lazy"
+                         />
+                    <div class="time-taken bg-light rounded">
+                        <i class="fa-solid fa-stopwatch" style="color: #b7b9bd"></i> 14
+                        min.
+                    </div>
+                    <p class="product-name">Coconut Water</p>
+                    <p class="product-weight">1 l</p>
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                        <p class="product-price m-0">Rs.91</p>
+                        <button class="add-btn">ADD</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="row-1 d-flex flex-wrap">
+                <table class="table-1">
+                    <thead>
+                        <tr>
+                            <th colspan="2">
+                                <p>Useful links</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>About</td>
+                            <td>Privacy</td>
+                            <td>Partner</td>
+                        </tr>
+                        <tr>
+                            <td>Careers</td>
+                            <td>Terms</td>
+                            <td>Express</td>
+                        </tr>
+                        <tr>
+                            <td>Blog</td>
+                            <td>FAQs</td>
+                            <td>Seller</td>
+                        </tr>
+                        <tr>
+                            <td>Press</td>
+                            <td>Security</td>
+                            <td>Spotlight</td>
+                        </tr>
+                        <tr>
+                            <td>Lead</td>
+                            <td>Mobile</td>
+                            <td>Warehouse</td>
+                        </tr>
+                        <tr>
+                            <td>Value</td>
+                            <td>Contact</td>
+                            <td>Deliver</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table-2">
+                    <thead>
+                        <tr>
+                            <th colspan="2" class="fw-bold fs-3">
+                                <p>Categories <a href="#" class="text-success mx-5"> See all</a></p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Vegetables & Fruits</td>
+                            <td>Dairy & Breakfast</td>
+                            <td>Munchies</td>
+                        </tr>
+                        <tr>
+                            <td>Cold Drinks & Juices</td>
+                            <td>Instant & Frozen Food</td>
+                            <td>Tea, Coffee & Health Drinks</td>
+                        </tr>
+                        <tr>
+                            <td>Bakery & Biscuits</td>
+                            <td>Sweet Tooth</td>
+                            <td>Atta, Rice & Dal</td>
+                        </tr>
+                        <tr>
+                            <td>Dry Fruits, Masala & Oil</td>
+                            <td>Sauces & Spreads</td>
+                            <td>Chicken, Meat & Fish</td>
+                        </tr>
+                        <tr>
+                            <td>Organic & Premium</td>
+                            <td>Paan Corner</td>
+                            <td>Baby Care</td>
+                        </tr>
+                        <tr>
+                            <td>Pharma & Wellness</td>
+                            <td>Cleaning Essentials</td>
+                            <td>Home & Office</td>
+                        </tr>
+                        <tr>
+                            <td>Personal Care</td>
+                            <td>Ice Creams & Frozen Desserts</td>
+                            <td>Pet Care</td>
+                        </tr>
+                        <tr>
+                            <td>Beauty & Cosmetics</td>
+                            <td>Books</td>
+                            <td>Magazines</td>
+                        </tr>
+                        <tr>
+                            <td>Toys & Games</td>
+                            <td>Print Store</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row-2 d-flex flex-wrap">
+                <div class="row-2-col-1">
+                    © Blink Commerce Private Limited (formerly known as Grofers India
+                    Private Limited), 2016-2023
+                </div>
+                <div class="row-2-col-2">
+                    <div class="gap-3">Download App</div>
+                    <a
+                        href="https://apps.apple.com/in/app/grofers-online-grocery/id960335206?ign-msr=https%3A%2F%2Fitunes.apple.com%2Fin%2Fapp%2Fgrofers-online-grocery%2Fid960335206%3Fmt%3D8"><button
+                            class="playstore rounded p-1 text-white border-0">
+                            <i class="fa-brands fa-google-play" style="color: #ededed;"></i></i>play store
+                        </button></a>
+                    <a
+                        href="https://apps.apple.com/in/app/grofers-online-grocery/id960335206?ign-msr=https%3A%2F%2Fitunes.apple.com%2Fin%2Fapp%2Fgrofers-online-grocery%2Fid960335206%3Fmt%3D8"><button
+                            class="playstore rounded p-1 text-white border-0">
+                            <i class="fa-brands fa-apple" style="color: #ededed;"></i></i> App Store
+                        </button></a>
+                </div>
+                <div class="row-2-col-3 text-center">
+                    <a href="/"><i class="fa-brands fa-facebook" style="color: #ffffff"></i></a>
+                    <a href="/"><i class="fa-brands fa-twitter" style="color: #ffffff"></i></a>
+                    <a href="/"><i class="fa-brands fa-instagram" style="color: #ffffff"></i></a>
+                    <a href="/"><i class="fa-brands fa-linkedin" style="color: #ffffff"></i></a>
+                    <a href="/"><i class="fa-brands fa-reddit-alien" style="color: #ffffff"></i></a>
+                </div>
+            </div>
+            <div class="row-3">
+                “Blinkit” is owned & managed by "Blink Commerce Private Limited"
+                (formerly known as Grofers India Private Limited) and is not related,
+                linked or interconnected in whatsoever manner or nature, to “GROFFR.COM”
+                which is a real estate services business operated by “Redstone
+                Consultancy Services Private Limited”.
+            </div>
+        </div>
+           
+        <div class="footer text-center mt-3">
+            <h5>Made with ❤️ by Tej Bari</h5>
+        </div>
+        
+        <!-- bootsrap js -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+        <!-- font awesome -->
+        <script src="https://kit.fontawesome.com/0b381e01ab.js" crossorigin="anonymous"></script>
+    </div>    
+</body>
+
 </html>
